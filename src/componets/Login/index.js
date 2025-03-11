@@ -13,10 +13,7 @@ const Login = () => {
     await signInWithPopup(auth, provider);
   };
 
-  const handleFacebookLogin = async () => {
-    const provider = new FacebookAuthProvider();
-    await signInWithPopup(auth, provider);
-  };
+
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
@@ -27,12 +24,7 @@ const Login = () => {
       >
         Login com Google
       </button>
-      <button
-        onClick={handleFacebookLogin}
-        className="bg-blue-700 text-white p-2 rounded"
-      >
-        Login com Facebook
-      </button>
+    
     </div>
   );
 };
