@@ -25,7 +25,7 @@ const Login = () => {
     <div className="div-container">
       <div className="mask"></div>
 
-      <h1>Larissa Renata</h1>
+      <h1>Larissa Renataa</h1>
       <h2>Treinos Personalizados</h2>
 
       <button
