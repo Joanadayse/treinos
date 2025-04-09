@@ -1,51 +1,37 @@
-import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { auth } from "../../utils/firebase";
 import { useNavigate } from "react-router-dom";
-import "./home.css"
+import  img from "../../assests/img-2.jpg"
+import logo from "../../assests/logo.png"
 
 
-const Login = () => {
+const Home = () => {
   const navigate = useNavigate();
-  const provider = new GoogleAuthProvider();
-
-  const whatsappNumber = "559884600588"; 
-  const whatsappLink = `https://wa.me/${whatsappNumber}`;
-
-
-  const handleGoogleLogin = async () => {
-    try {
-      await signInWithPopup(auth, provider);
-      navigate("/dashboard"); 
-    } catch (error) {
-      alert("Erro ao fazer login com Google: " + error.message);
-    }
-  };
 
   return (
-    <div className="div-container">
-      <div className="mask"></div>
+    <div className="home-container">
+      <div className="card">
+        <div className="card-image">
+          <img src={img} alt="Treino" />
+          <img src={logo} alt="Treino" />
+        </div>
 
-      <h1>Larissa Renataa</h1>
-      <h2>Treinos Personalizados</h2>
+        
 
-      <button
-        onClick={handleGoogleLogin}
-      >
-        Entrar com Google
-      </button>
-
-      <p>
-        <a
-          href={whatsappLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: "#25D366", fontWeight: "bold" }}
-        >
-          Fale conosco no WhatsApp
-        </a>
-      </p>
+        <div className="card-body">
+          <div className="button-group">
+            <button className="btn" onClick={() => navigate("/aluno-login")}>
+              Sou Aluno
+            </button>
+            <button
+              className="btn secondary"
+              onClick={() => navigate("/admin-login")}
+            >
+              Sou Administrador
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Login;
+export default Home;
