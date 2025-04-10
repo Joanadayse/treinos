@@ -16,7 +16,7 @@
 ## 🚀 **Tecnologias Utilizadas**  
 - React.js ⚛️  
 - Firebase (Autenticação e Banco de Dados) 🔥  
-- Styled Components (ou CSS Modules) 🎨  
+  
 
 ## 🛠 **Instalação e Uso**  
 
