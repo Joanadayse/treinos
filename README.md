@@ -4,14 +4,32 @@
 
 🔥 Aplicação para gerenciamento de treinos personalizados, permitindo que alunas visualizem seus treinos, marquem exercícios concluídos e acompanhem sua evolução.  
 
+## 🔗 Acesse o projeto
+
+👉 [Clique aqui para acessar o site](https://treinos-liard.vercel.app/)
+
 ## 📋 **Funcionalidades**  
-✅ Login apenas pelo Google  
-✅ Dashboard com treinos diários e semanais  
-✅ Checklists para marcar exercícios concluídos  
-✅ Vídeos curtos demonstrando os movimentos  
-✅ Notificações e lembretes para treinos  
-✅ Histórico para acompanhar a evolução  
-✅ Botão de contato direto pelo WhatsApp  
+👤 Autenticação:
+- Login com Google para alunos e administradores.
+- Página inicial com botões de acesso separados: "Sou Aluno" e "Sou Administrador".
+
+👩‍🏫 Painel da Administradora (Admin):
+- Criar novos usuários (nome, e-mail e senha).
+- Criar treinos personalizados:
+- Definir título do treino (ex: "Pernas", "Braços").
+- Adicionar vários exercícios com:
+Nome,
+Quantidade de séries,
+Quantidade de repetições.
+- Botão para adicionar mais exercícios ao treino
+- Botão para criar e salvar o treino.
+
+🧍‍♀️ Área do Aluno:
+- Aluno escolhe o treino do dia a partir de uma lista (dropdown).
+- Visualiza os exercícios do treino escolhido.
+- Pode marcar os exercícios como concluídos (checkbox).
+- Botão para concluir treino do dia.
+- Botão de sair da conta.
 
 ## 🚀 **Tecnologias Utilizadas**  
 - React.js ⚛️  
@@ -22,8 +40,8 @@
 
 ### **1️⃣ Clone o repositório:**  
 ```bash
-git clone https://github.com/seu-usuario/treinos-personalizados.git
-cd treinos-personalizados
+git clone https://github.com/seu-usuario/treinos.git
+cd treinos
 ```
 
 ### **2️⃣ Instale as dependências:**  
