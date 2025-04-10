@@ -138,7 +138,9 @@ const handleCreateUser = async () => {
       {exercises.map((ex, i) => (
         <div key={i} style={{ marginBottom: "15px" }}>
           <input
-            style={{ width: "100%", marginBottom: "5px" }}
+            autoCorrect="off"
+            autoCapitalize="none"
+            spellCheck="false"
             placeholder="Nome do exercício"
             value={ex.nome}
             onChange={(e) => handleChangeExercise(i, "nome", e.target.value)}
